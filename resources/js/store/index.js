@@ -23,6 +23,7 @@ export default createStore({
         },
         addToChart(context, payload){
             context.commit('ADD_CHART', payload);
+
         }
     },
     mutations:{
@@ -31,6 +32,8 @@ export default createStore({
         },
         ADD_CHART(state, payload){
             state.chart.push(state.product[payload]);
+            state.product[payload].stok-=1;
+            
         }
     }
 
