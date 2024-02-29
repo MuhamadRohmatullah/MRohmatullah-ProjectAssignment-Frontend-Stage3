@@ -11,12 +11,12 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
         <!-- Styles -->
-        <style>
-        </style>
+        <link href="{{mix('css/app.css')}}" rel="stylesheet">
     </head>
     <body class="antialiased">
        <div id="app">
-
+          <router-view></router-view>
        </div>
+    <script src="{{mix('js/app.js')}}"></script>
     </body>
 </html>
