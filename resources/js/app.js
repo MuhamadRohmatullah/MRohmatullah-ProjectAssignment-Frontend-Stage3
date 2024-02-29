@@ -6,7 +6,9 @@
 
 import './bootstrap';
 import { createApp } from 'vue';
-
+import store from './store';
+import { createRouter, createWebHistory } from 'vue-router';
+import {routes} from './routes';
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
  * registering components with the application instance so they are ready
@@ -14,9 +16,19 @@ import { createApp } from 'vue';
  */
 
 const app = createApp({});
+const router = createRouter({
+    history : createWebHistory(),
+    routes
+})
 
 import ExampleComponent from './components/ExampleComponent.vue';
 app.component('example-component', ExampleComponent);
+
+import CatalogComponent from "./components/CatalogComponent.vue";
+app.component('catalog', CatalogComponent);
+
+import ChartComponent from "./components/ChartComponent.vue";
+app.component('chartt', ChartComponent);
 
 /**
  * The following block of code may be used to automatically register your
@@ -36,4 +48,6 @@ app.component('example-component', ExampleComponent);
  * scaffolding. Otherwise, you will need to add an element yourself.
  */
 
+app.use(store);
+app.use(router);
 app.mount('#app');
