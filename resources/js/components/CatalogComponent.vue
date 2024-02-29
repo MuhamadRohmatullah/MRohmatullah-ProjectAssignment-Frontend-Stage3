@@ -15,8 +15,9 @@
                     </div>
                     <div class="card-footer">
                         <h6>Stok : {{list.stok}}</h6>
-                        <h6>Rp.{{list.price}}</h6>
-                        <button class="btn btn-primary" @click="addChart(index)">Add To Chart</button>
+                        <h6 :class="list.stok == 0 ? 'sold' : ''">Rp.{{list.price}}</h6>
+                        <button v-if="list.stok != 0" class="btn btn-primary" @click="addChart(index)">Add To Chart</button>
+                        <button v-else class="btn btn-danger">SoldOut</button>
                     </div>
                 </div>
             </div>
@@ -51,4 +52,10 @@ export default {
 }
 </script>
 <style>
+
+.sold{
+    text-decoration: line-through;
+    color: rgb(97, 97, 97) !important;
+}
+
 </style>
