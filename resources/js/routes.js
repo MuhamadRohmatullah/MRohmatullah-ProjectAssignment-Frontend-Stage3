@@ -1,5 +1,6 @@
 import CatalogComponent from "./components/CatalogComponent.vue";
 import ChartComponent from "./components/ChartComponent.vue";
+import PaymentComponent from "./components/Payment.vue";
 
 export const routes = [
 
@@ -12,6 +13,11 @@ export const routes = [
         path : "/chart",
         name : "chart",
         component: ChartComponent
+    },
+    {
+        path : "/payment",
+        name : "payment",
+        component: PaymentComponent
     }
 
 ];
