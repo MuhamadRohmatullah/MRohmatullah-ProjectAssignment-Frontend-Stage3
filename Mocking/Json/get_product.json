@@ -20,6 +20,13 @@
             "description": "Sangat cocok seekali unutk menunda lapar",
             "stok": 8,
             "price": 8000
+        },
+        {
+            "id" : 4,
+            "name": "Mi Goreng",
+            "description": "makanan cocok unutk semua kalangan",
+            "stok": 10,
+            "price": 3500
         }
     ]
 }
