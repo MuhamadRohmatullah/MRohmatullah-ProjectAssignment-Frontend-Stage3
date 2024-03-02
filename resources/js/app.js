@@ -9,6 +9,13 @@ import { createApp } from 'vue';
 import store from './store';
 import { createRouter, createWebHistory } from 'vue-router';
 import {routes} from './routes';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faShoppingCart, faCartPlus, faShop, faTrash, faArrowLeftLong} from '@fortawesome/free-solid-svg-icons';
+import { faSquareCheck } from '@fortawesome/free-regular-svg-icons';
+
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
 /**
  * Next, we will create a fresh Vue application instance. You may then begin
  * registering components with the application instance so they are ready
@@ -21,6 +28,9 @@ const router = createRouter({
     routes
 })
 
+library.add(faShoppingCart, faCartPlus, faShop, faTrash, faArrowLeftLong, faSquareCheck);
+app.component('font-awesome-icon', FontAwesomeIcon);
+
 import ExampleComponent from './components/ExampleComponent.vue';
 app.component('example-component', ExampleComponent);
 
@@ -29,6 +39,15 @@ app.component('catalog', CatalogComponent);
 
 import ChartComponent from "./components/ChartComponent.vue";
 app.component('chartt', ChartComponent);
+
+import PaymentComponent from "./components/Payment.vue";
+app.component('payment', PaymentComponent);
+
+import ButtonComponent from "./components/ButtonComponent.vue";
+app.component('buton', ButtonComponent);
+
+import HeaderComponent from "./components/HeaderComponent.vue";
+app.component('top', HeaderComponent);
 
 /**
  * The following block of code may be used to automatically register your
