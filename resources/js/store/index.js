@@ -5,7 +5,9 @@ export default createStore({
 
     state:{
         product:{},
-        chart : []
+        chart : [],
+        total: 0,
+        tochart : 0
     },
     getters:{
         getProduct(state){
@@ -13,6 +15,12 @@ export default createStore({
         },
         getChart(state){
             return state.chart;
+        },
+        getTotal(state){
+            return state.total;
+        },
+        getTocart(state){
+            return state.tochart;
         }
     },
     actions:{
@@ -22,18 +30,60 @@ export default createStore({
             context.commit('ADD_PRODUCT', response.data);
         },
         addToChart(context, payload){
-            context.commit('ADD_CHART', payload);
 
+            context.commit('ADD_CART', payload);
+
+        },
+        deleteCart(context, payload){
+            context.commit('DELETE_CART', payload);
+        },
+        hitungTotal(context){
+            context.commit('TOTAL_PRICE');
         }
     },
     mutations:{
         ADD_PRODUCT(state, payload){
             state.product = payload.data;
         },
-        ADD_CHART(state, payload){
-            state.chart.push(state.product[payload]);
+        ADD_CART(state, payload){
+            state.tochart += 1;
+            let newcart = {
+                id : state.product[payload].id,
+                name : state.product[payload].name,
+                qty : 1,
+                price : state.product[payload].price
+            }
+
+            if(state.chart.length != 0){
+                for(const el of state.chart){
+                    var same = el.id == newcart.id;
+                    if(same){
+                        el.qty+=1;   
+                    };
+                };
+                if(!same){
+                    state.chart.push(newcart);
+                }
+            }else{
+                state.chart.push(newcart);
+            }
+
             state.product[payload].stok-=1;
             
+        },
+        DELETE_CART(state, payload){
+            state.tochart -= 1;
+            state.chart[payload].qty-=1;
+            if(state.chart[payload].qty < 1){
+                state.chart.splice(payload, 1);
+            }
+            
+        },
+        TOTAL_PRICE(state){
+            for(const el of state.chart){
+                    state.total = el.price*el.qty;
+            }
+             
         }
     }
 
