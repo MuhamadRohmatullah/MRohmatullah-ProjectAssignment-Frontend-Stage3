@@ -15,14 +15,16 @@
                 <thead>
                     <tr>
                         <th>Nama</th>
+                        <th>Harga</th>
                         <th>Jumlah</th>
-                        <th>harga</th>
+                        <th>Price</th>
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody v-for="(item, index) in chartItem" :key="index">
                     <tr v-if="item.qty != 0">
                         <td>{{item.name}}</td>
+                        <td>{{item.price}}</td>
                         <td  class="ms-2">{{item.qty}}</td>
                         <td>{{item.price*item.qty}}</td>
                         <td><font-awesome-icon id="delete" icon="fa-solid fa-trash" size="xl" style="color: #d01616;"  @click="deleteCart(index)"/></td>

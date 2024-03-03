@@ -22776,7 +22776,7 @@ var _hoisted_8 = {
   "class": "table table-hover table-info"
 };
 var _hoisted_9 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Nama"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Jumlah"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "harga"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Action")])], -1 /* HOISTED */);
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Nama"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Harga"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Jumlah"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Price"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", null, "Action")])], -1 /* HOISTED */);
 });
 var _hoisted_10 = {
   key: 0
@@ -22802,7 +22802,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }), _hoisted_5])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("table", _hoisted_8, [_hoisted_9, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.chartItem, function (item, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("tbody", {
       key: index
-    }, [item.qty != 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("tr", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.qty), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.price * item.qty), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_font_awesome_icon, {
+    }, [item.qty != 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("tr", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.price), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.qty), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(item.price * item.qty), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_font_awesome_icon, {
       id: "delete",
       icon: "fa-solid fa-trash",
       size: "xl",
@@ -30033,7 +30033,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#elemen{\r\n    width: 100%;\r\n    height: 150px;\r\n    background-color: rgb(120, 223, 129);\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#elemen{\n    width: 100%;\n    height: 150px;\n    background-color: rgb(120, 223, 129);\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -30057,7 +30057,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.btn[data-v-c59fa660]{\r\n    border-radius: 0;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.btn[data-v-c59fa660]{\n    border-radius: 0;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -30081,7 +30081,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.sold[data-v-0c212d62]{\r\n    text-decoration: line-through;\r\n    color: rgb(97, 97, 97) !important;\n}\n.card[data-v-0c212d62]{\r\n    width: 100%;\r\n    height: 220px;\n}\n#addcart[data-v-0c212d62]{\r\n    color: #ffffff;\r\n    cursor: pointer;\n}\n.btn[data-v-0c212d62]{\r\n    border-radius: 0;\n}\n#chrt[data-v-0c212d62]{\r\n    background-color: rgb(27, 245, 125);\r\n    border: 0;\n}\n#chrt[data-v-0c212d62]:hover{\r\n    background-color: rgba(41, 245, 133, 0.596);\n}\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.sold[data-v-0c212d62]{\n    text-decoration: line-through;\n    color: rgb(97, 97, 97) !important;\n}\n.card[data-v-0c212d62]{\n    width: 100%;\n    height: 220px;\n}\n#addcart[data-v-0c212d62]{\n    color: #ffffff;\n    cursor: pointer;\n}\n.btn[data-v-0c212d62]{\n    border-radius: 0;\n}\n#chrt[data-v-0c212d62]{\n    background-color: rgb(27, 245, 125);\n    border: 0;\n}\n#chrt[data-v-0c212d62]:hover{\n    background-color: rgba(41, 245, 133, 0.596);\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -30105,7 +30105,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#delete[data-v-59dc526a]:hover{\r\n    cursor: pointer;\r\n    width: 18px;\n}\n.total[data-v-59dc526a]{\r\n    color : rgb(42, 153, 245);\n}\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#delete[data-v-59dc526a]:hover{\n    cursor: pointer;\n    width: 18px;\n}\n.total[data-v-59dc526a]{\n    color : rgb(42, 153, 245);\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -30129,7 +30129,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#chart[data-v-153bfd55]{\r\n    width: 100px;\n}\n.btn[data-v-153bfd55]{\r\n    background-color: #03ff89;\r\n    border: 0;\n}\n.navbar[data-v-153bfd55]{\r\n    background-color: #03ff89;\n}\n.count[data-v-153bfd55]{\r\n    color: white;\r\n    font-weight: bold;\n}\n#cart[data-v-153bfd55]{\r\n   cursor: pointer;\n}\n#cart[data-v-153bfd55]:hover{\r\n    width: 23px;\n}\nspan[data-v-153bfd55]{\r\n    color: white;\n}\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#chart[data-v-153bfd55]{\n    width: 100px;\n}\n.btn[data-v-153bfd55]{\n    background-color: #03ff89;\n    border: 0;\n}\n.navbar[data-v-153bfd55]{\n    background-color: #03ff89;\n}\n.count[data-v-153bfd55]{\n    color: white;\n    font-weight: bold;\n}\n#cart[data-v-153bfd55]{\n   cursor: pointer;\n}\n#cart[data-v-153bfd55]:hover{\n    width: 23px;\n}\nspan[data-v-153bfd55]{\n    color: white;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -30153,7 +30153,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.form-control[data-v-7bace86b], .form-select[data-v-7bace86b]{\r\n    border-radius: 0;\n}\n.btn[data-v-7bace86b]{\r\n    border-radius: 0;\n}\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.form-control[data-v-7bace86b], .form-select[data-v-7bace86b]{\n    border-radius: 0;\n}\n.btn[data-v-7bace86b]{\n    border-radius: 0;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
