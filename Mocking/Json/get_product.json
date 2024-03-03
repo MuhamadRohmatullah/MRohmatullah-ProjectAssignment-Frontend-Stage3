@@ -1,0 +1,32 @@
+{
+    "data":[
+        {
+            "id" : 1,
+            "name": "Mie instant",
+            "description": "Harga murah rasa istimewah",
+            "stok": 6,
+            "price": 3500
+        },
+        {
+            "id" : 2,
+            "name": "Air Mineral",
+            "description": "Air bersih dan aman diminum, jangan minum air sembarangan",
+            "stok": 5,
+            "price": 2000
+        },
+        {
+            "id" : 3,
+            "name": "Mie Gelas",
+            "description": "Sangat cocok sekali untuk menunda lapar",
+            "stok": 8,
+            "price": 2500
+        },
+        {
+            "id" : 4,
+            "name": "Mi Goreng",
+            "description": "makanan cocok untuk semua kalangan",
+            "stok": 10,
+            "price": 3500
+        }
+    ]
+}

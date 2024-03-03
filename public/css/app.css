@@ -11977,4 +11977,20 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+*{
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    box-sizing: border-box;
+}
 
+#back{
+    width: 30px;
+    cursor: pointer;
+}
+
+#back:hover{
+    color: rgb(133, 133, 130);
+}
+
+.card{
+    border-radius: 0;
+}
