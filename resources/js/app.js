@@ -11,7 +11,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import {routes} from './routes';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faShoppingCart, faCartPlus, faShop, faTrash, faArrowLeftLong} from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faCartPlus, faShop, faTrash, faArrowLeftLong, faMoneyCheck} from '@fortawesome/free-solid-svg-icons';
 import { faSquareCheck } from '@fortawesome/free-regular-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -26,9 +26,9 @@ const app = createApp({});
 const router = createRouter({
     history : createWebHistory(),
     routes
-})
+});
 
-library.add(faShoppingCart, faCartPlus, faShop, faTrash, faArrowLeftLong, faSquareCheck);
+library.add(faShoppingCart, faCartPlus, faShop, faTrash, faArrowLeftLong, faSquareCheck, faMoneyCheck);
 app.component('font-awesome-icon', FontAwesomeIcon);
 
 import ExampleComponent from './components/ExampleComponent.vue';
@@ -48,6 +48,15 @@ app.component('buton', ButtonComponent);
 
 import HeaderComponent from "./components/HeaderComponent.vue";
 app.component('top', HeaderComponent);
+
+import ModalComponent from "./components/ModalComponent.vue";
+app.component('warning', ModalComponent);
+
+import FooterComponent from "./components/FooterChartComponent.vue";
+app.component('bot', FooterComponent);
+
+import BannerComponent from "./components/BannerComponent.vue";
+app.component('banner', BannerComponent);
 
 /**
  * The following block of code may be used to automatically register your
