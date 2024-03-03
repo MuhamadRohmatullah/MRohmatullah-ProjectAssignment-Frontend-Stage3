@@ -7,7 +7,8 @@ export default createStore({
         product:{},
         chart : [],
         total: 0,
-        tochart : 0
+        tochart : 0,
+        bill : {}
     },
     getters:{
         getProduct(state){
@@ -21,6 +22,9 @@ export default createStore({
         },
         getTocart(state){
             return state.tochart;
+        },
+        getBillPay(state){
+            return state.bill;
         }
     },
     actions:{
@@ -32,18 +36,24 @@ export default createStore({
         addToChart(context, payload){
 
             context.commit('ADD_CART', payload);
-
         },
         deleteCart(context, payload){
+
             context.commit('DELETE_CART', payload);
         },
         hitungTotal(context){
+
             context.commit('TOTAL_PRICE');
+        },
+        billPay(context, payload){
+
+            context.commit('GET_BILL', payload);
         }
     },
     mutations:{
         ADD_PRODUCT(state, payload){
             state.product = payload.data;
+
         },
         ADD_CART(state, payload){
             state.tochart += 1;
@@ -84,7 +94,10 @@ export default createStore({
                     state.total = el.price*el.qty;
             }
              
+        },
+        GET_BILL(state, payload){
+           state.bill = payload;
         }
     }
 
-})
+});
