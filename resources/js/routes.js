@@ -1,13 +1,13 @@
-import CatalogComponent from "./components/CatalogComponent.vue";
 import ChartComponent from "./components/ChartComponent.vue";
 import PaymentComponent from "./components/Payment.vue";
+import MainPageComponent from "./components/MainPageComponent.vue";
 
 export const routes = [
 
     {
         path : "/",
         name : "home",
-        component : CatalogComponent
+        component : MainPageComponent
     },
     {
         path : "/chart",
