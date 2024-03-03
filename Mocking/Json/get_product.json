@@ -3,28 +3,28 @@
         {
             "id" : 1,
             "name": "Mie instant",
-            "description": "Cocok unutk anak kost, harga sangat bersahabat",
+            "description": "Harga murah rasa istimewah",
             "stok": 6,
-            "price": 5000
+            "price": 3500
         },
         {
             "id" : 2,
             "name": "Air Mineral",
-            "description": "Air bersih dan aman diminum, unutk kesehatan",
+            "description": "Air bersih dan aman diminum, jangan minum air sembarangan",
             "stok": 5,
-            "price": 6000
+            "price": 2000
         },
         {
             "id" : 3,
             "name": "Mie Gelas",
-            "description": "Sangat cocok seekali unutk menunda lapar",
+            "description": "Sangat cocok sekali untuk menunda lapar",
             "stok": 8,
-            "price": 8000
+            "price": 2500
         },
         {
             "id" : 4,
             "name": "Mi Goreng",
-            "description": "makanan cocok unutk semua kalangan",
+            "description": "makanan cocok untuk semua kalangan",
             "stok": 10,
             "price": 3500
         }
